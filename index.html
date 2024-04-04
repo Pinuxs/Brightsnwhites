@@ -5,6 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brights n Whites | Welcome</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <style>
+  .overlay-container .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.4rem;
+  padding-top: 10%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+h2.thicker {
+  font-weight: 700;
+  color: black;
+
+}
+.overlay-container .overlay:before {
+  content: ' ';
+  display: inline-block;
+  height: 100%;
+  
+}
+
+.overlay-container .overlay span {
+  font: 16px/1 Arial, sans-serif; /* Reset the font property */
+  display: inline-block;
+  vertical-align: top;
+  
+}
+
+.MainImg{
+  width: 100%;
+  
+}
+/* Rainbow Gradient for Text Outline */
+h1 {
+  font-size: 3em;
+    background: white;
+    color: white;
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px transparent;
+    
+  }
+  
+
+    </style>
   </head>
   <body>
 
@@ -13,8 +63,7 @@
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-
-          <li class="menu-text">Brights n Whites</li>
+          <li class="menu-text"><a href="#"></a></li>
           <li><a href="#">Home</a></li>
           <li><a href="#">Services</a></li>
         </ul>
@@ -32,13 +81,20 @@
 
     <div class="callout large">
       <div class="row column text-center">
-        <img src="a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" class="d-block w-100" alt="...">
-        <h1>Brights n Whites</h1>
-        <p class="lead">The best laundromat in Darley</p>
-        <a href="#" class="button large">Lost Goods</a>
-        <a href="#" class="button large hollow">FAQ</a>
-      </div>
+          <div class="overlay-container">
+            <div class="imgthingy">
+              <img class="MainImg" src="a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" />
+            </div>
+              <div class="overlay">
+                <span ><h1 id="rainbow-text-big"></h1><br>
+               <h2 class="thicker">The best laundromat in Darley</h2><br>
+                <a href="#" class="button large">Lost Goods</a>
+                <a href="#" class="button large">FAQ</a></span>
+            </div>
+          </div>
     </div>
+    </div>
+<br><br>
 
     <div class="row">
       <div class="medium-6 columns medium-push-6">
@@ -56,17 +112,14 @@
 
     <div class="row">
       <div class="medium-4 columns">
-        <h3>Machine 1</h3>
+        <h3>pet Wash</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
       </div>
       <div class="medium-4 columns">
-        <h3>Machine 2</h3>
+        <h3>30kg washer</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
       </div>
-      <div class="medium-4 columns">
-        <h3>Machine 3</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
-      </div>
+                                                       
     </div>
 
     <hr>
@@ -135,6 +188,28 @@
         <li><a href="#">Four</a></li>
       </ul>
     </div>
+
+
+<script>
+  const rainbowText = document.getElementById('rainbow-text-big');
+  const text = "Brights 'N Whites";
+  let colors = ['red', 'orange', 'green', 'blue', 'indigo', 'violet'];
+  let colorIndex = 0;
+
+  for (let i = 0; i < text.length; i++) {
+    let char = text[i];
+    if (char !== ' ') {
+      let span = document.createElement('H1');
+      span.innerText = char;
+      span.style.webkitTextStroke = `2px ${colors[colorIndex]}`;
+      span.style.textStroke = `2px ${colors[colorIndex]}`;
+      colorIndex = (colorIndex + 1) % colors.length;
+      rainbowText.appendChild(span);
+    } else {
+      rainbowText.appendChild(document.createTextNode(' ')); // Insert space between words
+    }
+  }
+</script>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
