@@ -187,7 +187,7 @@ h1 {
 
 <script>
   const rainbowText = document.getElementById('rainbow-text-big');
-  const text = "Brights 'N Whites";
+  const text = "Brights 'n' Whites";
   let colors = ['red', 'orange', 'green', 'blue', 'indigo', 'violet'];
   let colorIndex = 0;
 
@@ -196,8 +196,8 @@ h1 {
     if (char !== ' ') {
       let span = document.createElement('H1');
       span.innerText = char;
-      span.style.webkitTextStroke = `2px ${colors[colorIndex]}`;
-      span.style.textStroke = `2px ${colors[colorIndex]}`;
+      span.style.webkitTextFillColor =colors[colorIndex];
+      span.style.color = colors[colorIndex];
       colorIndex = (colorIndex + 1) % colors.length;
       rainbowText.appendChild(span);
     } else {
