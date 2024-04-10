@@ -6,50 +6,7 @@
     <title>Brights n Whites | Welcome</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     
-    <style>
- 
- .overlay-container .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2%;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.7);
-  align-content: center;
-}
 
-.overlay-container .overlay span {
-  font: 1em/1 Arial, sans-serif; /* Set font size relative to the parent element */
-  display: inline-block;
-  vertical-align: top;
-}
-h2.thicker {
-  font-weight: 700;
-  color: black;
-  font-size: calc( min(3vw, 50px) );
-}
-
-.MainImg{
-  width: 200vw;
-  
-}
-/* Rainbow Gradient for Text Outline */
-h1 {
-  font-size: calc( min(7vw, 150px) );
- 
-    background: white;
-    color: white;
-    display: inline-block;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px transparent;
-  }
-  
-
-    </style>
   </head>
   <body>
 
@@ -74,26 +31,11 @@ h1 {
     </div>
     <!-- End Top Bar -->
 
-    <div class="callout large">
-      <div class="row column text-center">
-          <div class="overlay-container">
-            <div class="imgthingy">
-              <img class="MainImg" src="a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" />
-            </div>
-              <div class="overlay">
-                <span ><h1 id="rainbow-text-big"></h1><br>
-               <h2 class="thicker">The best laundromat in Darley</h2><br>
-                <a href="#" class="button large">Lost Goods</a>
-                <a href="#" class="button large">FAQ</a></span>
-            </div>
-          </div>
-    </div>
-    </div>
-<br><br>
+<img src="a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" width="100%" alt="">
 
     <div class="row">
       <div class="medium-6 columns medium-push-6">
-           <iframe src="https://storage.googleapis.com/maps-solutions-5of25z8hyj/locator-plus/aiey/locator-plus.html"
+        <iframe src="https://storage.googleapis.com/maps-solutions-5of25z8hyj/locator-plus/aiey/locator-plus.html" 
         width="100%" height="500px"
         style="border:0;"
         loading="lazy">
@@ -114,22 +56,31 @@ h1 {
         <h3>30kg washer</h3>
         <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
       </div>
-                                                       
+      <div class="medium-4 columns">
+        <h3>Large washer</h3>
+        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+      </div>                                           
     </div>
+
 
     <hr>
 
     <div class="row column">
       <ul class="vertical medium-horizontal menu expanded text-center">
-        <li><a href="#"><div class="stat">1</div><span>Coin Machine</span></a></li>
-        <li><a href="#"><div class="stat">13</div><span>Washers</span></a></li>
-        <li><a href="#"><div class="stat">9</div><span>Driers</span></a></li>
-        <li><a href="#"><div class="stat">1</div><span>Powder Dispenser</span></a></li>
+        <li><a href="#"><div class="stat">Minutes</div><span>Coin Machine</span></a></li>
+        <li><a href="#"><div class="stat">Minutes</div><span>Washers</span></a></li>
+        <li><a href="#"><div class="stat">Minutes</div><span>Driers</span></a></li>
       </ul>
     </div>
 
     <hr>
-
+    <div class="row">
+      <div class="columns">
+        <h3>Reviews</h3>
+        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+      </div>
+    </div>
+    <hr>
     <div class="row column">
       <a  href="Facebook Page"><h3>Facebook Posts</h3></a>
     </div>
@@ -184,33 +135,6 @@ h1 {
       </ul>
     </div>
 
-
-<script>
-  const rainbowText = document.getElementById('rainbow-text-big');
-  const text = "Brights 'n' Whites";
-  let colors = ['red', 'orange', 'green', 'blue', 'indigo', 'violet'];
-  let colorIndex = 0;
-
-  for (let i = 0; i < text.length; i++) {
-    let char = text[i];
-    if (char !== ' ') {
-      let span = document.createElement('H1');
-      span.innerText = char;
-      span.style.webkitTextFillColor =colors[colorIndex];
-      span.style.color = colors[colorIndex];
-      colorIndex = (colorIndex + 1) % colors.length;
-      rainbowText.appendChild(span);
-    } else {
-      rainbowText.appendChild(document.createTextNode(' ')); // Insert space between words
-    }
-  }
-</script>
-
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
   </body>
 </html>
 
