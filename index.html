@@ -5,34 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brights n Whites | Welcome</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-    
+    <link rel="stylesheet" type="text/css" target="_blank" href="Styles.css" />
 
   </head>
   <body>
 
     <!-- Start Top Bar -->
    <!-- Nav Bar-->
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text"><a href="#"></a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-        </ul>
+    <nav>
+      <div class="logo">
+        <img src="assets/Logo64x64.png" alt="logo" />
+        <h1>LOGO</h1>
       </div>
-      <div class="top-bar-right">
-        <ul class="menu">
-          <li><a href="#">How To Use Our Machines</a></li>
-          <li><a href="#">Lost Goods</a></li>
-          <li><a href="#">Whats Near by</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li><a href="#">How To Use Our Machines</a></li>
+        <li><a href="#">Lost Goods</a></li>
+        <li><a href="#">Whats Near by</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </div>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li><a href="#">How To Use Our Machines</a></li>
+        <li><a href="#">Lost Goods</a></li>
+        <li><a href="#">Whats Near by</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </div>
-    
+
+   
     <!-- End Top Bar -->
 <!--Static IMG-->
-<img src="a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" width="" alt="">
+<img src="Assets/a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" width="" alt="">
     <!--Google Maps-->
     <div class="row">
       <div class="medium-6 columns medium-push-6">
@@ -93,7 +114,7 @@ will need to discuss further.
 Might need a 360 camera or phone attachment if we doing the 360 thing? will need to see options for all ways.-->
     <div class="row">
       <div class="column">
-        <img src="thumbnail_IMG_1914.jpg" alt="" width="100%">
+        <img src="Assets/thumbnail_IMG_1914.jpg" alt="" width="100%">
       </div>
     </div>
     <hr>
@@ -172,5 +193,13 @@ Might need a 360 camera or phone attachment if we doing the 360 thing? will need
   </body>
 </html>
 
-
+<script> const mobileNav = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".menubar");
+  
+  const toggleNav = () => {
+    navbar.classList.toggle("active");
+    mobileNav.classList.toggle("hamburger-active");
+  };
+  mobileNav.addEventListener("click", () => toggleNav());
+  </script>
 
