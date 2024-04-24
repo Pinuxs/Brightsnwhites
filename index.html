@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" type="text/css" target="_blank" href="Styles.css" />
 
+    <style>
+      .space{
+        padding-top:3%;
+      }
+    </style>
   </head>
   <body>
 
@@ -14,8 +19,7 @@
    <!-- Nav Bar-->
     <nav>
       <div class="logo">
-        <img src="assets/Logo64x64.png" alt="logo" />
-        <h1>LOGO</h1>
+        <h1><a href="index.html">Brights 'n' Whites</a></h1>
       </div>
       <ul>
         <li>
@@ -54,8 +58,9 @@
     <!-- End Top Bar -->
 <!--Static IMG-->
 <img src="Assets/a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp" width="" alt="">
+<hr>
     <!--Google Maps-->
-    <div class="row">
+    <div class="row space">
       <div class="medium-6 columns medium-push-6">
         <!--iframe with link to google maps api-->
         <iframe src="https://storage.googleapis.com/maps-solutions-5of25z8hyj/locator-plus/aiey/locator-plus.html" 
@@ -67,7 +72,8 @@
       <!--About us, will need changing but need to ask client about this-->
       <div class="medium-6 columns medium-pull-6">
         <h2>About Us</h2>
-        <p>Welcome to our family-run laundromat! We prioritize cleanliness, convenience, and friendly service. With modern facilities and top-notch equipment, we're dedicated to making your laundry experience hassle-free. Trust us with your laundry needs and enjoy a welcoming environment that feels like home. Thank you for choosing us!</p>
+        <p style="text-align: justify;">Welcome to our family-run laundromat! We prioritise cleanliness, convenience, and friendly service. With modern facilities and top-notch equipment, we're dedicated to making your laundry experience hassle-free. Trust us with your laundry needs and enjoy a welcoming environment that feels like home.</p>
+        <p style="text-align: center; padding-top: 5%;"><strong>Thank you for choosing us!</strong></p>
       </div>
     </div>
 <hr>
@@ -76,20 +82,51 @@
 -->
     <div class="row">
       <div class="medium-4 columns">
-        <h3 style="text-align: center;">Pet Wash</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-card-inner">
+            <div class="flip-card-inner-front">
+              <span>Pet Wash</span>
+            </div>
+            <div class="flip-card-inner-back">
+              <h3 class="flip-card-inner-back-title">Pet Wash</h3>
+              <p class="flip-card-inner-back-text">Our pet wash is a 20kg washer for all dog bedding, horse rugs, etc. </p>
+              <h3><strong>$6</strong></h3>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="medium-4 columns">
-        <h3 style="text-align: center;">Coin Machine</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-card-inner">
+            <div class="flip-card-inner-front">
+              <span>Book your next adventure</span>
+            </div>
+            <div class="flip-card-inner-back">
+              <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+              <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+              <a href="#" class="button success">Book now</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="medium-4 columns">
-        <h3 style="text-align: center;">24kg washer</h3>
-        <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna.</p>
+        <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+          <div class="flip-card-inner">
+            <div class="flip-card-inner-front">
+              <span>Book your next adventure</span>
+            </div>
+            <div class="flip-card-inner-back">
+              <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+              <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+              <a href="#" class="button success">Book now</a>
+            </div>
+          </div>
+        </div>
       </div>                                           
     </div>
 
-
+    
+    
     <hr>
     <!--What payment we accept? 
       could replace with how long it roughly takes to complete a wash or relate it to the above machines-->
