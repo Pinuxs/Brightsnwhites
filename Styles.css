@@ -148,10 +148,11 @@
           perspective: 1000;
   border: 0;
   background: transparent;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
 }
 
-.flip-card:hover .flip-card-inner,
-.flip-card.hover .flip-card-inner {
+
+.flip-card.click .flip-card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
