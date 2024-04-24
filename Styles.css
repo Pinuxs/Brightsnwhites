@@ -31,7 +31,7 @@
     margin-right: 10px;
   }
   nav .logo h1 {
-    font-size: 1.1rem;
+    font-size: 2rem;
     background: linear-gradient(to right, #b927fc 0%, #2c64fc 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -41,6 +41,8 @@
   nav ul {
     list-style: none;
     display: flex;
+    font-size: 1.3rem;
+    padding-top: 1%;
   }
   nav ul li {
     margin-left: 1.5rem;
