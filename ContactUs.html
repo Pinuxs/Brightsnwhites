@@ -51,15 +51,15 @@
       <div class="small-12 columns">
         <h2>Contact Us</h2>
         <!-- Contact Form -->
-        <form action="send_email.php" method="post">
+        <form id="contactForm" method="post">
           <div class="row">
             <div class="small-12 medium-6 columns">
-              <label for="name">Name</label>
+              <label for="name">First Name</label>
               <input type="text" id="name" name="name" placeholder="Your Name" required>
             </div>
             <div class="small-12 medium-6 columns">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your Email" required>
+              <label for="Phone">Phone number</label>
+              <input type="tel" id="Phone" name="Phone" placeholder="Your Phone number" pattern="[0-9]{10}" required>
             </div>
           </div>
           <div class="row">
@@ -77,7 +77,24 @@
       </div>
     </div>
     
-
+    
+  
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
+  
+        // Collect form data
+        var formData = this.elements;
+  
+        // Construct mailto link with pre-filled data
+        var mailtoLink = "mailto:recipient@example.com";
+        mailtoLink += "?subject=New message from " + encodeURIComponent(formData.name.value);
+        mailtoLink += "&body=" + encodeURIComponent("Name: " + formData.name.value + "\nPhone: " + formData.Phone.value + "\nMessage: " + formData.message.value);
+  
+        // Open email client
+        window.location.href = mailtoLink;
+      });
+    </script>
 
 </body>
 </html>
