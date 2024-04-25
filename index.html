@@ -362,6 +362,7 @@ let scrollLeft;
 
 const container = document.querySelector('.container');
 
+// Mouse events
 container.addEventListener('mousedown', (e) => {
   isMouseDown = true;
   container.classList.add('active');
@@ -383,6 +384,29 @@ container.addEventListener('mousemove', (e) => {
   if (!isMouseDown) return;
   e.preventDefault();
   const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scroll speed
+  container.scrollLeft = scrollLeft - walk;
+});
+
+// Touch events
+container.addEventListener('touchstart', (e) => {
+  const touch = e.touches[0];
+  isMouseDown = true;
+  container.classList.add('active');
+  startX = touch.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+});
+
+container.addEventListener('touchend', () => {
+  isMouseDown = false;
+  container.classList.remove('active');
+});
+
+container.addEventListener('touchmove', (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const touch = e.touches[0];
+  const x = touch.pageX - container.offsetLeft;
   const walk = (x - startX) * 3; // Adjust scroll speed
   container.scrollLeft = scrollLeft - walk;
 });
