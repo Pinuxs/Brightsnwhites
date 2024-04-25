@@ -7,24 +7,17 @@
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" type="text/css" target="_blank" href="CSS/Styles.css" />
 
-    <style>
-      .space{
-        padding-top:3%;
-      }
-    </style>
+  
   </head>
   <body>
 
+
     <!-- Start Top Bar -->
    <!-- Nav Bar-->
-   <nav>
-    <div class="row"> 
-      <h4 style="text-align: center;">We are open 5am to 10pm every day!!</h4>
-    </div>
-   </nav>
-    <nav>   
+
+    <nav style="background-color: rgb(103, 200, 230); padding: 2.5%; color: black;">   
       <div class="logo">
-        <h1><a href="index.html">Brights 'n' Whites</a></h1>
+        <h1><a href="index.html"><strong>Brights 'n' Whites</strong></a></h1>
       </div>
       <ul>
         <li>
@@ -59,19 +52,26 @@
       </ul>
     </div>
 
-   
     <!-- End Top Bar -->
 
-    <div class="callout large">
-      <div class="row column text-center">
-        <h1>Brights 'n' Whites</h1>
-        <p class="lead">Best laundromat in Darley</p>
-        <a href="#" class="button large">Learn More</a>
-        <a href="#" class="button large hollow">Learn Less</a>
+    <div class=" large" style="padding: 3%;">
+      <div class="row column text-center eleven">
+        <h1 style="font-size: 10vw;">Brights 'n' Whites</h1>
+        <p style="font-size: 4vw;" class="eleven">Best laundromat in Darley</p>
+        <a href="ContactUs.html" style="background-color: rgb(103, 200, 230); color: black;"class="button large">Contact Us</a>
+        <a href="NearBy.html" style="border-color: rgb(103, 200, 230); color: rgb(56, 120, 140);" class="button large hollow">Nearby</a>
       </div>
     </div>
-
-
+    <div style="background-color: rgb(164, 118, 237); padding: 0.2%; color: white;" class="text-center">
+      <div class="row logo"> 
+        <h1 style="text-align: center; font-size: 2rem;">We are open 5am to 10pm every day!!</h1>
+      </div>
+    </div>
+   
+<img src="Assets/thumbnail_IMG_1914.jpg" alt="">
+<br>
+<br>
+<br>
     <!--Google Maps-->
     <div class="row space">
       <div class="medium-6 columns medium-push-6">
@@ -89,31 +89,49 @@
         <p style="text-align: center; padding-top: 5%;"><strong>Thank you for choosing us!</strong></p>
       </div>
     </div>
-<hr>
+
 <!--Popular Machines
   need to ask client about what 3 machines they want advertised.
 -->
 
-    <div class="row">
-      <div class="medium-4 columns">
+    <div style="user-select: none;" class="row container" >
+      <div class="medium-4 columns item">
         <div class="flip-card card" onclick="this.classList.toggle('click');">
           <div class="flip-card-inner">
             <div class="flip-card-inner-front">
-              <img src="#" alt="Pet wash photo">
+
+              <div class="washingmachine" onclick="showPopupMachines()">
+                <div class="drum"></div>
+                <div class="door"></div>
+                <div class="tray"></div>
+                <div class="dial"></div>
+                <div class="buttons"></div>
+                <div class="pilot"></div>
+            </div>
             </div>
             <div class="flip-card-inner-back">
+              <div class="popup">
+                <div class="popuptext" id="myPopup">try dragging me</div>
+              </div>
               <h3 class="flip-card-inner-back-title">Pet Wash</h3>
               <p class="flip-card-inner-back-text">Our pet wash is a 20kg washer for all dog bedding, horse rugs, etc. </p>
-              <h3><strong>$6</strong></h3>
+              <h3><strong>30</strong></h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="medium-4 columns">
+      <div class="medium-4 columns item">
         <div class="flip-card card" onclick="this.classList.toggle('click');">
           <div class="flip-card-inner">
             <div class="flip-card-inner-front">
-              <img src="#" alt="24kg washer">
+              <div class="washingmachine">
+                <div class="drum"></div>
+                <div class="door"></div>
+                <div class="tray"></div>
+                <div class="dial"></div>
+                <div class="buttons"></div>
+                <div class="pilot"></div>
+            </div>
             </div>
             <div class="flip-card-inner-back">
               <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
@@ -122,11 +140,18 @@
           </div>
         </div>
       </div>
-      <div class="medium-4 columns">
+      <div class="medium-4 columns item">
         <div class="flip-card card" onclick="this.classList.toggle('click');">
           <div class="flip-card-inner">
             <div class="flip-card-inner-front">
-              <img src="#" alt="Top Loader">
+              <div class="washingmachine">
+                <div class="drum"></div>
+                <div class="door"></div>
+                <div class="tray"></div>
+                <div class="dial"></div>
+                <div class="buttons"></div>
+                <div class="pilot"></div>
+            </div>
             </div>
             <div class="flip-card-inner-back">
               <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
@@ -134,12 +159,53 @@
             </div>
           </div>
         </div>
-      </div>                                           
+      </div>     
+      <div class="medium-4 columns item">
+        <div class="flip-card card" onclick="this.classList.toggle('click');">
+          <div class="flip-card-inner">
+            <div class="flip-card-inner-front">
+              <div class="washingmachine">
+                <div class="drum"></div>
+                <div class="door"></div>
+                <div class="tray"></div>
+                <div class="dial"></div>
+                <div class="buttons"></div>
+                <div class="pilot"></div>
+            </div>
+            </div>
+            <div class="flip-card-inner-back">
+              <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+              <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+            </div>
+          </div>
+        </div>
+      </div>   
+      <div class="medium-4 columns item">
+        <div class="flip-card card" onclick="this.classList.toggle('click');">
+          <div class="flip-card-inner">
+            <div class="flip-card-inner-front">
+              <div class="washingmachine">
+                <div class="drum"></div>
+                <div class="door"></div>
+                <div class="tray"></div>
+                <div class="dial"></div>
+                <div class="buttons"></div>
+                <div class="pilot"></div>
+            </div>
+            </div>
+            <div class="flip-card-inner-back">
+              <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+              <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+            </div>
+          </div>
+        </div>
+      </div>                                         
     </div>
 
     
-    
-    <hr>
+    <br>
+    <br>
+    <br>
     <!--What payment we accept? 
       could replace with how long it roughly takes to complete a wash or relate it to the above machines-->
     <h3 style="text-align: center;">Our Machines Accept:</h3>
@@ -288,6 +354,46 @@ Might need a 360 camera or phone attachment if we doing the 360 thing? will need
     mobileNav.classList.toggle("hamburger-active");
   };
   mobileNav.addEventListener("click", () => toggleNav());
+
+
+  let isMouseDown = false;
+let startX;
+let scrollLeft;
+
+const container = document.querySelector('.container');
+
+container.addEventListener('mousedown', (e) => {
+  isMouseDown = true;
+  container.classList.add('active');
+  startX = e.pageX - container.offsetLeft;
+  scrollLeft = container.scrollLeft;
+});
+
+container.addEventListener('mouseleave', () => {
+  isMouseDown = false;
+  container.classList.remove('active');
+});
+
+container.addEventListener('mouseup', () => {
+  isMouseDown = false;
+  container.classList.remove('active');
+});
+
+container.addEventListener('mousemove', (e) => {
+  if (!isMouseDown) return;
+  e.preventDefault();
+  const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX) * 3; // Adjust scroll speed
+  container.scrollLeft = scrollLeft - walk;
+});
+
+
   </script>
 
-
+<script>
+  // When the user clicks on div, open the popup
+  function showPopupMachines() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
