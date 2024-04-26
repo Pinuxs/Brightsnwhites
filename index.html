@@ -15,9 +15,9 @@
     <!-- Start Top Bar -->
    <!-- Nav Bar-->
 
-    <nav style="background-color: rgb(103, 200, 230); padding: 2.5%; color: black;">   
+    <nav style="background-color: rgb(103, 200, 230); padding: 2.5%;">   
       <div class="logo">
-        <h1><a href="index.html"><strong>Brights 'n' Whites</strong></a></h1>
+        <h1><a href="index.html" style="color: black;"><strong>Brights 'n' Whites</strong></a></h1>
       </div>
       <ul>
         <li>
@@ -81,6 +81,7 @@
         style="border:0;"
         loading="lazy">
     </iframe>
+    
       </div>
       <!--About us, will need changing but need to ask client about this-->
       <div class="medium-6 columns medium-pull-6">
@@ -359,8 +360,8 @@ Might need a 360 camera or phone attachment if we doing the 360 thing? will need
   let isMouseDown = false;
 let startX;
 let scrollLeft;
-
 const container = document.querySelector('.container');
+const items = document.querySelectorAll('.item');
 
 // Mouse events
 container.addEventListener('mousedown', (e) => {
@@ -411,7 +412,16 @@ container.addEventListener('touchmove', (e) => {
   container.scrollLeft = scrollLeft - walk;
 });
 
-
+// Check if scrolling reaches the end
+container.addEventListener('scroll', () => {
+  const containerWidth = container.offsetWidth;
+  const itemsWidth = Array.from(items).reduce((acc, item) => acc + item.offsetWidth + parseInt(getComputedStyle(item).marginRight), 0);
+  if (container.scrollLeft === 0) {
+    container.scrollLeft = itemsWidth - containerWidth;
+  } else if (container.scrollLeft + containerWidth >= itemsWidth) {
+    container.scrollLeft = 0;
+  }
+});
   </script>
 
 <script>

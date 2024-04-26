@@ -24,7 +24,7 @@
   nav .logo {
     display: flex;
     align-items: center;
-    
+    color: black;
   }
   nav .logo img {
     height: 25px;
@@ -36,7 +36,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color:black;
-    
+    color: black;
   }
   
   nav ul {
@@ -69,7 +69,7 @@
   .hamburger .line {
     width: 25px;
     height: 1px;
-    background-color: pink;
+    background-color: black;
     display: block;
     margin: 7px auto;
     transition: all 0.3s ease-in-out;
