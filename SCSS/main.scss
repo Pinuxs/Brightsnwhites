@@ -1,0 +1,8 @@
+$primary-color: rgb(43, 35, 35);
+body {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+  }
