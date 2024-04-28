@@ -6,10 +6,10 @@
 
 .home {
   height: 70%;
-  padding-top: 40vh;
+  padding-top: 30vh;
   overflow: hidden;
-  align-items: center;
   text-align: center;
+  margin: auto;
   background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("../Assets/a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp") center top;
   background-size: cover;
 }
@@ -43,7 +43,7 @@
 .about__us__gmap {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 1%;
+  padding-top: 2%;
 }
 @media (max-width: 600px) {
   .about__us__gmap .column {

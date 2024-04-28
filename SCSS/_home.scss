@@ -1,9 +1,8 @@
 
 .home {
     height: 70%;
-    padding-top: 40vh;
+    padding-top: 30vh;
     overflow: hidden;
-    align-items: center;
     text-align: center;
     margin: auto;
     background: 
@@ -49,7 +48,8 @@
     display: flex;
     flex-wrap: wrap;
     @include media-column;
-    padding-top: 1%;
+    padding-top: 2%;
+  
 
   
     .column {
