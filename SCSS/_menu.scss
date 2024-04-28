@@ -10,6 +10,7 @@
   cursor: pointer;
   @include transition-ease;
 
+
   &__burger {
     position: absolute;
     right: 0;
@@ -18,6 +19,7 @@
     height: 3px;
     background: set-text-color($primary-color);
     @include transition-ease;
+
 
     &::before {
       content: '';
