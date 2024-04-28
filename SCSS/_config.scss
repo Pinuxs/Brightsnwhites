@@ -34,3 +34,12 @@ $secondary-color: rgb(181, 32, 181);
     @content;
   }
 }
+
+@mixin media-column{
+  @media (max-width: 600px) {
+    .column {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+}

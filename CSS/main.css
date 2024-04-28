@@ -5,7 +5,7 @@
 }
 
 .home {
-  height: 100%;
+  height: 70%;
   padding-top: 40vh;
   overflow: hidden;
   align-items: center;
@@ -22,6 +22,47 @@
 .home__name--last {
   color: rgb(181, 32, 181);
   font-weight: 700;
+}
+
+.open__hours {
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  height: 3.5%;
+  text-align: center;
+}
+
+.open__title {
+  color: white;
+  font-weight: bold;
+  padding: auto;
+}
+.open__title span {
+  color: rgb(181, 32, 181);
+}
+
+.about__us__gmap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1%;
+}
+@media (max-width: 600px) {
+  .about__us__gmap .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.about__us__gmap .column {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: large;
+}
+.about__us__gmap .column span {
+  padding-top: 15px;
+}
+.about__us__gmap .column p {
+  text-align: center; /* Changed from font-display */
 }
 
 .menu-btn {
@@ -89,6 +130,7 @@
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
+  font-weight: bolder;
   height: 100vh;
   overflow: hidden;
   background: white;
@@ -115,7 +157,7 @@
   font-size: 1.65rem;
   text-transform: uppercase;
   padding: 2rem 0;
-  font-weight: 300;
+  font-weight: 600;
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
