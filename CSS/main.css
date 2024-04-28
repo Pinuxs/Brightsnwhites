@@ -58,9 +58,6 @@
   text-align: center;
   font-size: large;
 }
-.about__us__gmap .column span {
-  padding-top: 15px;
-}
 .about__us__gmap .column p {
   text-align: center; /* Changed from font-display */
 }
