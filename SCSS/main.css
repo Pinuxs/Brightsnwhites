@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 70%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("../Assets/a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp") center top;
+  background-size: cover;
+}
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #000;
+}
+.home__name--last {
+  color: rgb(181, 32, 181);
+  font-weight: 700;
+}
+
+.open__hours {
+  background-color: rgb(41, 41, 41);
+  width: 100%;
+  height: 3.5%;
+  text-align: center;
+}
+
+.open__title {
+  color: white;
+  font-weight: bold;
+  padding: auto;
+}
+.open__title span {
+  color: rgb(181, 32, 181);
+}
+
+.about__us__gmap {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1%;
+}
+@media (max-width: 600px) {
+  .about__us__gmap .column {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+.about__us__gmap .column {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: large;
+}
+.about__us__gmap .column span {
+  padding-top: 15px;
+}
+.about__us__gmap .column p {
+  text-align: center; /* Changed from font-display */
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+.nav.open {
+  visibility: visible;
+}
+.nav .menu-nav {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  height: 100vh;
+  overflow: hidden;
+  background: white;
+  list-style-type: none;
+  padding-right: 1rem;
+  transform: translateY(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav.open {
+  transform: translateY(0);
+}
+.nav .menu-nav__item {
+  transform: translateX(100vw);
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__item.open {
+  transform: translateX(0);
+}
+.nav .menu-nav__item.active > a {
+  color: rgb(181, 32, 181);
+}
+.nav .menu-nav__link {
+  display: inline-block;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+.nav .menu-nav__link:hover {
+  color: rgb(181, 32, 181);
+}
+
+.menu-nav__item:nth-child(1) {
+  transition-delay: 0.25s;
+}
+
+.menu-nav__item:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.menu-nav__item:nth-child(3) {
+  transition-delay: 0.45s;
+}
+
+.menu-nav__item:nth-child(4) {
+  transition-delay: 0.55s;
+}
+
+.menu-nav__item:nth-child(5) {
+  transition-delay: 0.65s;
+}
+
+.menu-nav__item:nth-child(6) {
+  transition-delay: 0.75s;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+}
+body {
+  background: white;
+  color: #000;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: rgb(181, 32, 181);
+}/*# sourceMappingURL=main.css.map */
