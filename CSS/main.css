@@ -4,6 +4,26 @@
   padding: 0;
 }
 
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("../Assets/a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp") center top;
+  background-size: cover;
+}
+.home__name {
+  font-size: 5rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #000;
+}
+.home__name--last {
+  color: rgb(181, 32, 181);
+  font-weight: 700;
+}
+
 .menu-btn {
   position: absolute;
   z-index: 1;
