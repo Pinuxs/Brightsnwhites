@@ -32,6 +32,7 @@
     width: 100%;
     height: 3.5%;
     text-align: center;
+    margin-bottom: 2em;
   }
 
   .open__title{
@@ -44,7 +45,94 @@
 
   }
 
+  .button {
+    font-size: 1em;
+    padding: 10px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+  .button:hover {
+    background: $secondary-color;
+  }
+
+  .columns {
+    column-count: 2;
+    column-gap: 20px; // Adjust as needed for spacing between columns
+  }
   
+  .washer,
+  .dryer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; // Center the content horizontally
+
+        .button{
+            margin-top: 15px;
+        }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  }
   
   
   
