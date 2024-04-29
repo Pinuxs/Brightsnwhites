@@ -61,6 +61,7 @@
        column-count: 2;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  text-align: center;
 }
 
 .washer,
