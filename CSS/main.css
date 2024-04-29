@@ -59,8 +59,8 @@
 .columns {
   -moz-column-count: 2;
        column-count: 2;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
 
 .washer,
