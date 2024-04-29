@@ -49,6 +49,7 @@
   width: 28px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  font-size: 6.5vw;
 }
 .menu-btn__burger {
   position: absolute;
