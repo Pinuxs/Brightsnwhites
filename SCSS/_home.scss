@@ -68,12 +68,15 @@
   .dryer {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center; // Center the content horizontally
 
         .button{
             margin-top: 15px;
+        }
+
+        h3{
+            text-align: center;
         }
   }
 
