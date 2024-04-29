@@ -1,10 +1,9 @@
 
 .home {
     height: 70%;
-    padding-top: 23vh;
+    padding-top: 25vh;
     overflow: hidden;
     text-align: center;
-    max-width: $media-md;
     margin: auto;
     background: 
     linear-gradient(
@@ -45,30 +44,7 @@
 
   }
 
-  .about__us__gmap {
-    display: flex;
-    flex-wrap: wrap;
-    @include media-column;
-    padding-top: 2%;
   
-
-  
-    .column {
-      flex: 1 1 50%;
-      max-width: 50%;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: large;
-
-
-      p {
-        text-align: center; /* Changed from font-display */
-      }
-  
-
-
-    }
-  }
   
   
   

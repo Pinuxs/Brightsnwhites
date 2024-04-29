@@ -64,6 +64,7 @@
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  overflow: hidden;
 
   &.open {
     visibility: visible;
@@ -76,10 +77,8 @@
     justify-content: center;
     font-weight: bolder;
     height: 100vh;
-    overflow: hidden;
     background: $primary-color;
     list-style-type: none;
-    padding-right: 1rem;
     transform: translateY(-100%);
     @include transition-ease;
 
@@ -102,9 +101,9 @@
 
     &__link {
       display: inline-block;
-      font-size: 1.65rem;
+      font-size: 1.65vw;
       text-transform: uppercase;
-      padding: 2rem 0;
+      padding: 2vw 0;
       font-weight: 600;
       @include transition-ease;
 

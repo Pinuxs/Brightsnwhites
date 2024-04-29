@@ -40,28 +40,6 @@
   color: rgb(181, 32, 181);
 }
 
-.about__us__gmap {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 2%;
-}
-@media (max-width: 600px) {
-  .about__us__gmap .column {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-}
-.about__us__gmap .column {
-  flex: 1 1 50%;
-  max-width: 50%;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: large;
-}
-.about__us__gmap .column p {
-  text-align: center; /* Changed from font-display */
-}
-
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -118,6 +96,7 @@
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  overflow: hidden;
 }
 .nav.open {
   visibility: visible;
@@ -129,10 +108,8 @@
   justify-content: center;
   font-weight: bolder;
   height: 100vh;
-  overflow: hidden;
   background: white;
   list-style-type: none;
-  padding-right: 1rem;
   transform: translateY(-100%);
   transition: all 0.5s ease-in-out;
 }
@@ -151,9 +128,9 @@
 }
 .nav .menu-nav__link {
   display: inline-block;
-  font-size: 1.65rem;
+  font-size: 1.65vw;
   text-transform: uppercase;
-  padding: 2rem 0;
+  padding: 2vw 0;
   font-weight: 600;
   transition: all 0.5s ease-in-out;
 }
@@ -185,7 +162,7 @@
   transition-delay: 0.75s;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1100px) {
   .menu-btn {
     visibility: hidden;
   }
