@@ -41,6 +41,13 @@
   color: rgb(181, 32, 181);
 }
 
+.popular__title {
+  text-align: center;
+  margin-bottom: 2%;
+  font-size: 5vh;
+  font-weight: bold;
+}
+
 .button {
   font-size: 1em;
   padding: 10px;
