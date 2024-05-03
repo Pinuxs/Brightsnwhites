@@ -72,25 +72,36 @@
 
 .features {
   .row {
-    width: 80%;
-    height: fit-content;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    
+
     .column {
-      flex: 1;
-      display: flex;
-      margin: 0 100px;
-      justify-content: center;
-      align-items: center;
-      
-      img {
-        max-width: 30%;
-        margin-left: 50%;
-        height: auto;
-        display: block;
+      text-align: center;
+      margin: 0 10px;
+
+      .column-title {
+        margin-bottom: 10px;
+      }
+
+      .img {
+        position: relative;
+
+        img {
+          max-width: 30%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
   }
+
+
+    // Media query for smaller devices
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column; // Change to one column layout
+      }
+    }
 }
