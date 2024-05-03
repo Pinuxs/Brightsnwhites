@@ -20,7 +20,7 @@
   border-bottom: 2px solid #000;
 }
 .home__name--last {
-  color: rgb(181, 32, 181);
+  color: rgb(193, 22, 231);
   font-weight: 700;
 }
 
@@ -38,7 +38,7 @@
   padding: auto;
 }
 .open__title span {
-  color: rgb(181, 32, 181);
+  color: rgb(193, 22, 231);
 }
 
 .popular__title {
@@ -48,111 +48,41 @@
   font-weight: bold;
 }
 
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: black;
-  border: 2px solid black;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-.button:hover {
-  background: rgb(181, 32, 181);
-}
-
-.columns {
-  -moz-column-count: 2;
-       column-count: 2;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  text-align: center;
-}
-
-.washer,
-.dryer {
-  height: 200px;
-  display: flex;
-  flex-direction: column;
+.about-us {
   align-items: center;
-  justify-content: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
 }
-.washer .button,
-.dryer .button {
-  margin-top: 15px;
-}
-.washer h3,
-.dryer h3 {
+.about-us__title {
   text-align: center;
 }
-.washer p,
-.dryer p {
-  padding: 10px;
+.about-us__text {
+  text-align: justify;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+.features .row {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.features .row .column {
+  flex: 1;
+  display: flex;
+  margin: 0 100px;
+  justify-content: center;
+  align-items: center;
+}
+.features .row .column img {
+  max-width: 30%;
+  margin-left: 50%;
+  height: auto;
+  display: block;
 }
 
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-
-.popup .close:hover {
-  color: #06D85F;
-}
-
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-@media screen and (max-width: 700px) {
-  .box {
-    width: 70%;
-  }
-  .popup {
-    width: 70%;
-  }
-}
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -170,8 +100,8 @@
   top: 0.5rem;
   width: 28px;
   height: 3px;
-  background: #000;
   transition: all 0.5s ease-in-out;
+  background: #000;
 }
 .menu-btn__burger::before {
   content: "";
@@ -179,8 +109,8 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #000;
   transition: all 0.5s ease-in-out;
+  background: #000;
 }
 .menu-btn__burger::after {
   content: "";
@@ -188,8 +118,8 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #000;
   transition: all 0.5s ease-in-out;
+  background: #000;
 }
 .menu-btn__burger.open {
   transform: rotate(720deg);
@@ -197,10 +127,12 @@
 }
 .menu-btn__burger.open::before {
   transform: rotate(45deg) translate(5px, 8px);
+  background: black;
 }
 .menu-btn__burger.open::after {
   width: 28px;
   transform: rotate(-45deg) translate(3px, -7px);
+  background: black;
 }
 
 .nav {
@@ -238,7 +170,7 @@
   transform: translateX(0);
 }
 .nav .menu-nav__item.active > a {
-  color: rgb(181, 32, 181);
+  color: rgb(193, 22, 231);
 }
 .nav .menu-nav__link {
   display: inline-block;
@@ -249,7 +181,7 @@
   transition: all 0.5s ease-in-out;
 }
 .nav .menu-nav__link:hover {
-  color: rgb(181, 32, 181);
+  color: rgb(193, 22, 231);
 }
 
 .menu-nav__item:nth-child(1) {
@@ -276,6 +208,16 @@
   transition-delay: 0.75s;
 }
 
+header {
+  background-color: white;
+  height: 8.5vh;
+}
+
+.logo {
+  font-size: 2.3vh;
+  text-align: left;
+}
+
 @media screen and (min-width: 1100px) {
   .menu-btn {
     visibility: hidden;
@@ -299,7 +241,7 @@
   }
 }
 body {
-  background: white;
+  background: rgb(150, 221, 246);
   color: #000;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -323,5 +265,5 @@ a {
 }
 
 .text-secondary {
-  color: rgb(181, 32, 181);
+  color: rgb(193, 22, 231);
 }/*# sourceMappingURL=main.css.map */
