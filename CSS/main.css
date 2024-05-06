@@ -10,7 +10,7 @@
   overflow: hidden;
   text-align: center;
   margin: auto;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("../Assets/a3e8e7_1c9e6b3ee9f145ce939b809a08acb435.webp") center top;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.3)), url("../Assets/ShopFront.webp") center top;
   background-size: cover;
 }
 .home__name {
