@@ -2,11 +2,25 @@ $primary-color: white;
 $secondary-color: rgb(184, 32, 218);
 $the-blue:rgb(150, 221, 246);
 $dar-gray: rgb(41, 41, 41);
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+@font-face {
+  font-family: "Swiss 721 Bold Rounded";
+  src: url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.eot");
+  src: url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.svg#Swiss 721 Bold Rounded")format("svg");
+}
+
 
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;

@@ -19,7 +19,7 @@
     width: 28px;
     height: 3px;
     @include transition-ease;
-    background: set-text-color(black);
+    background: set-text-color(white);
 
     &::before {
       content: '';
@@ -28,7 +28,7 @@
       width: 28px;
       height: 3px;
       @include transition-ease;
-      background: set-text-color(black);
+      background: set-text-color(white);
     }
 
     &::after {
@@ -38,7 +38,7 @@
       width: 20px;
       height: 3px;
       @include transition-ease;
-      background: set-text-color(black);
+      background: set-text-color(white);
     }
 
     &.open {

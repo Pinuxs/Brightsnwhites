@@ -1,9 +1,16 @@
+@import url("https://fonts.cdnfonts.com/css/swiss-721");
+@import url(https://db.onlinewebfonts.com/c/d890d634174186faf6358e45fdf5f286?family=Swiss+721+Bold+Rounded);
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+@font-face {
+  font-family: "Swiss 721 Bold Rounded";
+  src: url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.eot");
+  src: url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.woff") format("woff"), url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/d890d634174186faf6358e45fdf5f286.svg#Swiss 721 Bold Rounded") format("svg");
+}
 .home {
   height: 70%;
   padding-top: 25vh;
@@ -14,12 +21,14 @@
   background-size: cover;
 }
 .home__name {
+  font-family: "Swiss 721 Bold Rounded";
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #000;
 }
 .home__name--last {
+  font-family: "Swiss 721 Bold Rounded";
   color: rgb(184, 32, 218);
   font-weight: 700;
 }
@@ -174,7 +183,7 @@
   width: 28px;
   height: 3px;
   transition: all 0.5s ease-in-out;
-  background: #fff;
+  background: #000;
 }
 .menu-btn__burger::before {
   content: "";
@@ -183,7 +192,7 @@
   width: 28px;
   height: 3px;
   transition: all 0.5s ease-in-out;
-  background: #fff;
+  background: #000;
 }
 .menu-btn__burger::after {
   content: "";
@@ -192,7 +201,7 @@
   width: 20px;
   height: 3px;
   transition: all 0.5s ease-in-out;
-  background: #fff;
+  background: #000;
 }
 .menu-btn__burger.open {
   transform: rotate(720deg);
