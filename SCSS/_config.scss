@@ -35,7 +35,7 @@ $dar-gray: rgb(41, 41, 41);
 }
 
 @mixin media-md {
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 1200px) {
     @content;
   }
 }

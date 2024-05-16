@@ -1,14 +1,5 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-body{
-    font-family: 'Outfit';
-    background: linear-gradient(#5b5beb,#c385e9);
 
-}
 .contact-container{
     height: 100vh;
     display: flex;
@@ -65,13 +56,15 @@ body{
     width: 500px;
     height: 500px;
 }
-@media (max-width:800px) 
+@media (max-width:800px) {
     .contact-inputs{
         width: 80vw;
     }    
     .contact-right{
         display: none;
     }
-{
+}
+
+
     
 

@@ -3,22 +3,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <link rel="stylesheet" href="CSS/contact-us.css">
+    <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
+
+    <header>
+        <section>
+          <div class="menu-btn">
+            <span class="menu-btn__burger"></span>
+          </div>
+  
+      <nav class="nav">
+          <ul class="menu-nav">
+            <li class="menu-nav__item active">
+              <a href="index.html" class="menu-nav__link">
+                Home
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="services.html" class="menu-nav__link">
+                Services
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="MachineInstuc.html" class="menu-nav__link">
+                Machine Instructions
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="LostGoods.html" class="menu-nav__link">
+                Lost Goods
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="Nearby.html" class="menu-nav__link">
+                Whats Near by
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="contact-us.html" class="menu-nav__link">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        </section>
+      </header>
+
+
     <div class="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
-                <h2>Sup cuties</h2>
+                <h2>Contact Us</h2>
             </div>
             <input type="hidden" name="access_key" value="560cbe84-10f8-4d9b-9318-401ff025783f">
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="phone" name="phone" placeholder="Your phone number" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
             
-    
-
-            <button type="submit">submit</button>
+            <button type="submit">Send</button>
         </form>
 
       
@@ -31,3 +75,4 @@
     </div>
 </body>
 </html>
+<script src="JS/main.js"></script>

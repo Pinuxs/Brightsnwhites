@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.cdnfonts.com/css/swiss-721');
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -20,6 +20,7 @@
     height: 3px;
     @include transition-ease;
     background: set-text-color(white);
+
 
     &::before {
       content: '';
@@ -104,11 +105,12 @@
 
     &__link {
       display: inline-block;
-      font-size: 6.5vw;
+      font-size: 6vw;
       text-transform: uppercase;
       padding: 2vw 0;
       font-weight: 600;
       @include transition-ease;
+      font-family: "Swiss 721 Bold Rounded";
 
       &:hover {
         color: $secondary-color;
@@ -123,11 +125,3 @@
   }
 }
   
-header{
-  height: 8.5vh;
-}
-
-.logo{
-  font-size: 2.3vh;
-  text-align: left;
-}
